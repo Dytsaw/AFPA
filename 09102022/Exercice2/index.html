@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bootstrap Site</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/style.css">
+        <script defer src="./scripts/script.js"></script>
+    </head>
+    <body>
+        <!-- Exercice du tableau avec le changement de titre -->
+        <table border="1">
+            <td><h1 id="p1">Hello-Bootstrap</h1></td>
+            <legend>Modification des propriétés du titre</legend>
+                <tr>
+                    <th><label for="rangeColor"> Faites glisser pour changer la couleur</label></td>
+                    <td>0 <input type="range" id="rangeColor" min="0" max="255" step="5" value="0" name="color" oninput="update(this)"> 255</td>
+                </tr>
+                <tr>
+                    <th><label for="rangePadding"> Faites glisser pour changer le padding</label></td>
+                    <td>0 <input type="range" id="rangePadding" name="padding" value="0" min="0" max="30" oninput="update(this)"> 30</td>
+                </tr>
+                <tr>
+                    <th><label for="rangeHeight"> Faites glisser pour changer la hauteur</label></td>
+                    <td>0 <input type="range" id="rangeHeight" name="height" value="0" min="0" max="200" oninput="update(this)"> 200</td>
+                </tr>
+                <tr>
+                    <th><label for="rangeWidth"> Faites glisser pour changer la largeur</label></td>
+                    <td>0 <input type="range" id="rangeWidth" name="width" value="0" min="0" max="200" oninput="update(this)"> 200 </td>
+                </tr>
+                <tr>
+                    <th><label for="rangeRadius"> Faites glisser pour changer les arrondis</label></td>
+                    <td>0 <input type="range" id="rangeRadius" name="radius" min="0" max="30" value="0" oninput="update(this)"> 30 </td>
+                </tr>
+                <tr>
+                    <th><label for="rangeRotate"> Faites glisser pour changer la rotation</label></td>
+                    <td>0 <input type="range" id="rangeRotate" name="rotation" value="0" min="0" max="180" oninput="update(this)"> 180 </td>
+                </tr>
+        </table>
+        <div class="chronometre">
+            <div class="tim">
+                <span >0 h</span> :
+                <span >0 min</span> :
+                <span >0 s</span> :
+                <span >0 ms</span>
+            </div>
+
+            <button id="start" onclick="start()">Start</button>
+            <button id="stop" onclick="stop()" >Stop</button>
+            <button id="reset" onclick="reset()" >Reset</button>
+        </div>
+        <div class="exercice2">
+            <div id="p2">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, illo.</p>
+            </div>
+                <button onclick="changerStyle()">Changer la couleur du paragraphe</button>
+        </div>
+    </body>
+</html>
