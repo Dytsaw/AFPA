@@ -133,6 +133,7 @@ function add_name(){
         console.log(newTab);
 }
 
+
 function tirage(){
         if(newTab.length>0){
         let rand = Math.floor(Math.random()*newTab.length)
@@ -141,4 +142,9 @@ function tirage(){
         else
         console.log(`Please add name`);
 }
+
+//test pour supprimer un prenom dans le tableau
+//n1 Attribuer une valeur a chaque element du tableau 
+//n2 demander a l'utilisateur quel prenom il souhaite retirer 
+//n3 delete le prenom car chaque prenom sera lier a une valeur determiner automatiquement 
 

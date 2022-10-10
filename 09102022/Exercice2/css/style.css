@@ -57,3 +57,13 @@ h1{
   border: solid 2px #000;
   padding: 10px;
 }
+
+
+.exercice5{
+  margin: 10vh;
+  
+}
+
+.exercice5 button{
+ width: 150px;
+}
