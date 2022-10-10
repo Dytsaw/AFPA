@@ -95,9 +95,9 @@ function reset(){
         console.log("Le nombre est égal à 0");
  }else{
         console.log(`Le nombre ${a*b} est positif`);
- } */
+ }
 
-/* let userNombre = parseInt(prompt("Entrez un nombre"));
+let userNombre = parseInt(prompt("Entrez un nombre"));
 
 while(userNombre>0){
         console.log(userNombre);
@@ -124,5 +124,19 @@ while(userNombre>0){
 function changerStyle(){
         let para = document.getElementById('p2')
         para.classList.add("active")
-} */
+}
+ */
 
+let newTab = new Array()
+function add_name(){
+        newTab.push(prompt("Enter a name"))
+}
+
+function tirage(){
+        if(newTab.lenght>0){
+        let rand = Math.floor(Math.random()*newTab.lenght)
+        console.log("The winner is : " + newTab[rand]);
+}else{
+        console.log(`Please add name`);
+}
+}
