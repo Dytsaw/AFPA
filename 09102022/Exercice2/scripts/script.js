@@ -130,13 +130,15 @@ function changerStyle(){
 let newTab = new Array()
 function add_name(){
         newTab.push(prompt("Enter a name"))
+        console.log(newTab);
 }
 
 function tirage(){
-        if(newTab.lenght>0){
-        let rand = Math.floor(Math.random()*newTab.lenght)
+        if(newTab.length>0){
+        let rand = Math.floor(Math.random()*newTab.length)
         console.log("The winner is : " + newTab[rand]);
-}else{
+        }
+        else
         console.log(`Please add name`);
 }
-}
+
