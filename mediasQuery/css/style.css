@@ -139,21 +139,19 @@ Mobile S = 320px */
     .header{
         height: 40vh;
         width: 100%;
-        order: 1;
     }
     .content{
         height: 40vh;
         width: 100%;
-        order: 4;
+        order: 2;
     
     }
     .feature-1,.feature-2,.feature-3{
-        order: 2;
-        width: 33%;
+        width: 33.33%;
     }
     .sign-up{
         width: 100%;
-        order: 3;
+        order: 1;
     }
 
 }
