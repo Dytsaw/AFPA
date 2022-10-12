@@ -1,0 +1,171 @@
+
+/* Taille des medias
+Ordinateur portable = 1024px
+Tablette = 768px
+mobile L = 425px
+mobile M = 375px
+Mobile S = 320px */
+
+/* Mobile */
+/* @media screen and (max-width: 400px){
+    body{
+        background-color: blueviolet;
+    }
+} */
+
+/* Tablette */
+
+/* @media screen and (min-width: 401px) and (max-width: 960px){
+    body{
+        background-color: #c3f4c1;
+    }
+} */
+
+/* Desktop */
+/* @media screen and (min-width:960px) {
+    body{
+        background-color: tomato;
+    }
+} */
+
+*{
+    margin: 0;
+}
+
+.page{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+
+}
+.header, .content, .sign-up, .feature-1,.feature-2,.feature-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    background-color: lightgreen;
+    font-size: 2em;
+    height: 5vh;
+}
+
+.header{
+    background-color: lightblue;
+    height: 20vh;
+
+}
+
+.content{
+    background-color:lightgray;
+    height:35vh;
+
+}
+
+.sign-up{
+    background-color: lightskyblue;
+    
+}
+
+.feature-1{
+    background-color: orange;
+}
+
+.feature-2{
+    background-color: tomato;
+}
+    
+.feature-3{
+    background-color: violet;
+}
+
+.sign-up,.feature-1,.feature-2,.feature-3{
+    height: 20vh;
+}
+
+/* Tablette */
+
+@media screen and (min-width: 430px) and (max-width:960px){
+    .page{
+        display: flex;
+        flex-wrap: wrap;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .menu{
+        font-size: 2em;
+        display: flex;
+        justify-content: center;
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .header{
+        height: 20vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    
+    }
+    
+    .content{
+        height:35vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 100%;
+    }
+   
+    .sign-up,.feature-1,.feature-2,.feature-3{
+        height: 20vh;
+        width: 50%;
+    }
+
+}
+
+/* Desktop */
+
+@media screen and (min-width: 961px){
+    .page{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header{
+        height: 20vh;
+        width: 100%;
+        order: 1;
+    }
+    .content{
+        height: 40vh;
+        width: 100%;
+        order: 4;
+    
+    }
+    .feature-1,.feature-2,.feature-3{
+        flex: 30%;
+        order: 2;
+
+    }
+    .sign-up{
+        width: 100%;
+        order: 3;
+    }
+
+    .feature-1{
+        width: 33%;
+    }
+    .feature-2{
+        width:33%;
+    }
+    .feature-3{
+        width: 33%;
+        
+    }
+
+}
