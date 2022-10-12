@@ -137,7 +137,7 @@ Mobile S = 320px */
     }
 
     .header{
-        height: 20vh;
+        height: 40vh;
         width: 100%;
         order: 1;
     }
@@ -148,24 +148,12 @@ Mobile S = 320px */
     
     }
     .feature-1,.feature-2,.feature-3{
-        flex: 30%;
         order: 2;
-
+        width: 33%;
     }
     .sign-up{
         width: 100%;
         order: 3;
-    }
-
-    .feature-1{
-        width: 33%;
-    }
-    .feature-2{
-        width:33%;
-    }
-    .feature-3{
-        width: 33%;
-        
     }
 
 }
